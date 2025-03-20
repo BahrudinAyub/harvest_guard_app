@@ -1,0 +1,4 @@
+0 bacterial_leaf_blight
+1 brown_spot
+2 healty
+3 hispa
