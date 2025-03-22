@@ -8,6 +8,7 @@ import 'package:harvest_guard_app/components/scan_history_screen.dart';
 import 'package:harvest_guard_app/components/splashscreen.dart';
 import 'package:harvest_guard_app/dashboard/dashboard_binding.dart';
 import 'package:harvest_guard_app/dashboard/dashboard_page.dart';
+import 'package:harvest_guard_app/intro/page_intro.dart';
 import 'package:harvest_guard_app/periksa/periksa_binding.dart';
 import 'package:harvest_guard_app/periksa/periksa_controller.dart';
 import 'package:harvest_guard_app/periksa/periksa_page.dart';
@@ -18,9 +19,14 @@ class AppRoutes {
   static const String dashboard = '/dashboard';
   static const String periksa = '/periksa';
   static const String scanHistory = '/scan-history';
+  static const String intro = '/intro';
 
   // Daftar route aplikasi
   static final List<GetPage> pages = [
+    GetPage(
+      name: intro,
+      page: () => const IntroScreen(),
+    ),
     GetPage(
       name: splash,
       page: () => const SplashScreen(),

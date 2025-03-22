@@ -8,16 +8,13 @@ import 'package:hive_flutter/adapters.dart';
 Future<void> main() async {
   runApp(const MainApp());
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   // Initialize Hive
   await Hive.initFlutter();
-  
+
   // Register adapters
   Hive.registerAdapter(ScanHistoryAdapter());
-  
-
 }
-
 
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
